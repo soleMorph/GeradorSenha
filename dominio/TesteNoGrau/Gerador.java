@@ -19,7 +19,7 @@ public class Gerador /*extends Project01*/{
     private void escolha(String nome){
         Scanner scan=new Scanner(System.in);
         Opcoes opcoes=new Opcoes();
-        System.out.print(nome+" você deseja uma combinação de \n(1) combinação de números e carácteres\n(2) combinação de números, letras e carácteres\n(3) combinação de letras e carácteres\n>>");
+        System.out.print(nome+" você deseja uma combinação de \n(1) combinação de números e carácteres\n(2) combinação de números e letras\n(3) combinação de letras e carácteres\n(4) combinação de números, letras e caracteres\n>>");
         int resposta=scan.nextInt();
         System.out.println("");
         switch (resposta) {

@@ -14,15 +14,15 @@ public class Opcoes {
                 break;
 
             case 2:
-
+                Opcao02 opcao02=new Opcao02();
                 break;
 
             case 3:
-
+                Opcao03 opcao03=new Opcao03();
                 break;
 
             case 4:
-
+                Opcao04 opcao04=new Opcao04();
                 break;
         
             default:
@@ -34,7 +34,7 @@ public class Opcoes {
         Scanner scan=new Scanner(System.in);
         EntradaLetra letrasEntrada=new EntradaLetra();
         char[] charLetras;
-        System.out.print("\nDigite a quantidade de Letras: (Máximo 26)");
+        System.out.print("\nDigite a quantidade de Letras: (Máximo 26)\n>>");
         int numLetra=scan.nextInt();
         charLetras=letrasEntrada.entradaLetra(numLetra);
         return charLetras;
@@ -44,7 +44,7 @@ public class Opcoes {
         Scanner scan=new Scanner(System.in);
         EntradaNumero numerosEntrada=new EntradaNumero();
         char[] charNumeros;
-        System.out.print("\nDigite a quantidade de Números: (Máximo 9)");
+        System.out.print("\nDigite a quantidade de Números: (Máximo 9)\n>>");
         int numNumeros=scan.nextInt();
         charNumeros=numerosEntrada.entradaNumero(numNumeros);
         return charNumeros;
@@ -54,7 +54,7 @@ public class Opcoes {
         Scanner scan=new Scanner(System.in);
         EntradaCaractere caractereEntrada=new EntradaCaractere();
         char[] charCaractres;
-        System.out.print("\nDigite a quantidade de Caracteres: (Máximo 22)");
+        System.out.print("\nDigite a quantidade de Caracteres: (Máximo 22)\n>>");
         int numCarac=scan.nextInt();
         charCaractres=caractereEntrada.entrada(numCarac);
         return charCaractres;
