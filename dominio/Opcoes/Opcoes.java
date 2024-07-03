@@ -7,6 +7,9 @@ import GeradorDeSenha.dominio.Letra.EntradaLetra;
 import GeradorDeSenha.dominio.Numero.EntradaNumero;
 
 public class Opcoes {
+    int numLetra;
+    int numCaracter;
+    int numNumero;
     public void opcoes(int num1){
         switch (num1) {
             case 1:
@@ -36,6 +39,7 @@ public class Opcoes {
         char[] charLetras;
         System.out.print("\nDigite a quantidade de Letras: (Máximo 26)\n>>");
         int numLetra=scan.nextInt();
+        setNumLetra(numLetra);
         charLetras=letrasEntrada.entradaLetra(numLetra);
         return charLetras;
     }
@@ -46,6 +50,7 @@ public class Opcoes {
         char[] charNumeros;
         System.out.print("\nDigite a quantidade de Números: (Máximo 9)\n>>");
         int numNumeros=scan.nextInt();
+        setNumNumero(numNumeros);
         charNumeros=numerosEntrada.entradaNumero(numNumeros);
         return charNumeros;
     }
@@ -56,7 +61,35 @@ public class Opcoes {
         char[] charCaractres;
         System.out.print("\nDigite a quantidade de Caracteres: (Máximo 22)\n>>");
         int numCarac=scan.nextInt();
+        setNumCaracter(numCarac);
         charCaractres=caractereEntrada.entrada(numCarac);
         return charCaractres;
     }
+
+    public int getNumLetra() {
+        return numLetra;
+    }
+
+    public void setNumLetra(int numLetra) {
+        this.numLetra = numLetra;
+    }
+
+    public int getNumCaracter() {
+        return numCaracter;
+    }
+
+    public void setNumCaracter(int numCaracter) {
+        this.numCaracter = numCaracter;
+    }
+
+    public int getNumNumero() {
+        return numNumero;
+    }
+
+    public void setNumNumero(int numNumero) {
+        this.numNumero = numNumero;
+    }
 }
+
+
+    
